@@ -4,6 +4,7 @@ def fibonacci(n):
         fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
     return fib_sequence
 
+
 def print_fibonacci_pyramid(rows):
     fib_sequence = fibonacci(rows)
     index = 0
@@ -19,3 +20,12 @@ def print_fibonacci_pyramid(rows):
 # Укажите количество строк пирамиды
 rows = 2
 print_fibonacci_pyramid(rows)
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+# Добавьте вызов функции в конец файла
+print(f"Факториал числа {rows}: {factorial(rows)}")
